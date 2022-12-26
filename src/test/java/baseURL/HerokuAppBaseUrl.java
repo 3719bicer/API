@@ -12,7 +12,6 @@ public class HerokuAppBaseUrl {
     public void setUp(){
 
         specHerokuApp = new RequestSpecBuilder().
-                setBaseUri("https://restful-booker.herokuapp.com").
-                build();
+                setBaseUri("https://restful-booker.herokuapp.com").build();
     }
 }
