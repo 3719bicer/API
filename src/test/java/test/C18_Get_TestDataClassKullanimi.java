@@ -84,7 +84,7 @@ public class C18_Get_TestDataClassKullanimi extends JsonPlaceHolderBaseURL {
                 .spec(specJsonPlace)
                 .when()
                 .get("/{pp1}/{pp2}");
-        response2.prettyPrint();
+         response2.prettyPrint();
 
         JsonPath actResJP=response2.jsonPath();
 
