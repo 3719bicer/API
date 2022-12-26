@@ -2,6 +2,8 @@ package test;
 import baseURL.HerokuAppBaseUrl;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.hamcrest.Matcher;
+import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.junit.Test;
 import static io.restassured.RestAssured.given;
@@ -80,7 +82,7 @@ public class C16_BaseUrlHerokuapp extends HerokuAppBaseUrl {
                 then().
                 assertThat().
                 statusCode(200).
-                body("booking.firstname", equalTo("Ali"));
+                body("booking.firstname", Matchers.equalTo("Ali"));
     }
 
     /*@Test
