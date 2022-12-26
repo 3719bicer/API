@@ -60,7 +60,7 @@ public class C15_BaseUrlJsonPlaceHolder extends JsonPlaceHolderBaseURL {
          ve Response’ta 100 kayit oldugunu test edin.
         */
 
-        specJsonPlace.pathParams("pp1","posts");
+        specJsonPlace.pathParam("pp1","posts");
         Response response=given()
                 .spec(specJsonPlace)
                 .when()
