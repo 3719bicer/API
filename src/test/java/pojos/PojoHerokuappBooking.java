@@ -20,6 +20,7 @@ public class PojoHerokuappBooking {
        "additionalneeds":"wi-fi"
                               }
      */
+
     private String firstname;
     private String lastname;
     private int totalprice;
