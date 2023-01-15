@@ -71,4 +71,5 @@ public class PojoJsonPlace {
                 ", id=" + id +
                 '}';
     }
+
 }
