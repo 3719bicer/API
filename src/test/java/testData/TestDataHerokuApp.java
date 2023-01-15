@@ -2,6 +2,7 @@ package testData;
 import org.json.JSONObject;
 import java.util.HashMap;
 public class TestDataHerokuApp {
+
     public int statusCode = 200;
     public JSONObject innerBodyOlusturJson(){
         JSONObject innerBody = new JSONObject();
@@ -25,6 +26,7 @@ public class TestDataHerokuApp {
         expBody.put("booking",requestBodyOlusturJson());
         return expBody;
     }
+
     /*
     {
         "firstname" : "Ali",
