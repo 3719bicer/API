@@ -21,6 +21,7 @@ public class PojoHerokuappBookingDates {
      "checkout":"2021-06-10"
                           }
      */
+
     private String checkin;
     private String checkout;
 }
