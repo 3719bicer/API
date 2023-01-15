@@ -3,8 +3,10 @@ import jdk.security.jarsigner.JarSigner;
 import org.json.JSONObject;
 import java.util.HashMap;
 public class TestDataDummy {
+
     public int statusCode = 200;
     public String contentType = "application/json";
+
     public JSONObject innerDataJsonBodyOlustur (){
         JSONObject innerDataBodyJSON = new JSONObject();
         innerDataBodyJSON.put("id",3);
@@ -34,7 +36,8 @@ public class TestDataDummy {
                 },
         "message":"Successfully! Record has been fetched."
         }
-         */
+        */
+
         HashMap <String,Object> innerMap = new HashMap<>();
         HashMap <String,Object> expMap = new HashMap<>();
         innerMap.put("id",3.0);
