@@ -3,11 +3,17 @@ import org.json.JSONObject;
 
 import java.util.HashMap;
 
-public class TestDataJsonPlaceHolder {
+public class TestDataJsonPlaceHolder<HasMap> {
     public int basariliStatusCode = 200;
 
     public String contentType= "application/json; charset=utf-8";
     public String connectionHeaderDegeri = "keep-alive";
+
+    public double userId;
+    public double id;
+    public String title;
+    public String body;
+
     public JSONObject expectedDataOlustur(int userId,int id, String title,String body){
         JSONObject expDataJson = new JSONObject();
         expDataJson.put("userId",3);
@@ -34,6 +40,18 @@ public class TestDataJsonPlaceHolder {
         requestBodyMap.put( "userId",10.0);
         requestBodyMap.put( "id",70.0);
 
+
         return requestBodyMap;
+    }
+
+    public HashMap<String, Object> mapJsonOlusutr(){
+        HashMap<String ,Object> hashMap=new HashMap<>();
+
+        hashMap.put("userId",userId);
+        hashMap.put("id",id);
+        hashMap.put("title",title);
+        hashMap.put("body",body);
+
+        return hashMap;
     }
 }
